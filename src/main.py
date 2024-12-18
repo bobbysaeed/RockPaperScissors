@@ -9,3 +9,6 @@ class RockPaperScissors():
             return user_choice.lower()
         print("please enter a valid choice")
         return self.get_user_choice()
+
+    def get_pc_choice(self):
+        return random.choice(self.choices)
