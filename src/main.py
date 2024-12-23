@@ -1,3 +1,5 @@
+import random
+
 class RockPaperScissors():
 
     def __init__(self):
