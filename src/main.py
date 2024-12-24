@@ -26,3 +26,10 @@ class RockPaperScissors():
                 print("You Have Won! CONGRATS...")
 
         print("Oops! You just lost to a Computer")
+
+    def play(self):
+        user_choice = self.get_user_choice()
+        pc_choice = self.get_pc_choice()
+        print("computer choice is: ", pc_choice)
+        result = self.get_the_winner(user_choice, pc_choice)
+        print(result)
