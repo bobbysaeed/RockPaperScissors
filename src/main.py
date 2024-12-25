@@ -33,3 +33,12 @@ class RockPaperScissors():
         print("computer choice is: ", pc_choice)
         result = self.get_the_winner(user_choice, pc_choice)
         print(result)
+
+if __name__ == '__main__':
+    game = RockPaperScissors()
+
+    while True:
+        game.play()
+        continue_game = input("Do you want to play again? (Enter any key to continue or 'q' to quit): ")
+        if continue_game.lower() == 'q':
+            break
